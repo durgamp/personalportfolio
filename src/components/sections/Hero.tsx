@@ -1,7 +1,6 @@
 "use client";
 
 import { ArrowDown, Mail, FileText, Linkedin, Globe } from "lucide-react";
-import { ImagePlaceholder } from "@/components/shared/ImagePlaceholder";
 
 const contactCards = [
   {
@@ -83,14 +82,13 @@ export function Hero() {
           {/* Right: Photo + Contact cards */}
           <div className="flex flex-col items-center gap-8">
             {/* Profile photo */}
-            <div className="w-72 h-72 rounded-full border-4 border-white/30 overflow-hidden shadow-2xl bg-white/10 flex items-center justify-center">
-              <div className="w-full h-full relative">
-                <ImagePlaceholder
-                  label="Profile Photo"
-                  aspectRatio="square"
-                  className="rounded-full border-0"
-                />
-              </div>
+            <div className="w-72 h-72 rounded-full border-4 border-white/30 overflow-hidden shadow-2xl">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/profile.jpg"
+                alt="Durga Madhaba Padhy"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
 
             {/* Contact cards */}
