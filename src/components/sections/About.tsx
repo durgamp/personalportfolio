@@ -1,5 +1,5 @@
 import { Lightbulb, Users, Scale } from "lucide-react";
-import { ImagePlaceholder } from "@/components/shared/ImagePlaceholder";
+import Image from "next/image";
 
 const principles = [
   {
@@ -64,11 +64,13 @@ export function About() {
           </div>
 
           {/* Right: Visual */}
-          <div className="rounded-3xl overflow-hidden bg-gray-50 dark:bg-gray-800 p-6">
-            <ImagePlaceholder
-              label="Product Philosophy Visual"
-              aspectRatio="landscape"
-              className="rounded-2xl"
+          <div className="rounded-3xl overflow-hidden bg-white dark:bg-gray-800 p-4 shadow-sm">
+            <Image
+              src="/images/philosophy.png"
+              alt="Product Philosophy - Clarity, Adoption, Decision Frameworks"
+              width={600}
+              height={400}
+              className="w-full h-auto rounded-2xl"
             />
           </div>
         </div>
