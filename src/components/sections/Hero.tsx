@@ -11,8 +11,8 @@ const contactCards = [
   {
     label: "Resume",
     icon: FileText,
-    href: "/resume.pdf",
-    download: true,
+    href: "https://drive.google.com/file/d/1O8R2UJwvoR_hjy24xCLzw6dODSWwvASD/view?usp=drive_link",
+    external: true,
   },
   {
     label: "LinkedIn",
@@ -99,7 +99,6 @@ export function Hero() {
                   href={card.href}
                   target={card.external ? "_blank" : undefined}
                   rel={card.external ? "noopener noreferrer" : undefined}
-                  download={card.download ? true : undefined}
                   className="group bg-white/10 backdrop-blur-md rounded-2xl p-3 hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center"
                 >
                   <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center mb-2 group-hover:bg-white/30 transition-colors">
